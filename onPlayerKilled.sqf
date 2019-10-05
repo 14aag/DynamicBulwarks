@@ -1,4 +1,5 @@
 _player = _this select 0;
+waitUntil {!isNil "bulwarkBox"};
 _buildPhase = bulwarkBox getVariable ["buildPhase", true];
 
 if (!_buildPhase) then { // free respawn in build phase

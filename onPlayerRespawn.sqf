@@ -3,6 +3,7 @@ waitUntil {!isNil "bulwarkBox"};
 player setVariable ["buildItemHeld", false];
 
 //Make player immune to fall damage / immune to all damage while incapacitated / immune with a medikit
+/*
 player addEventHandler ["HandleDamage", {
   _beingRevived = player getVariable "RevByMedikit";
   TEAM_DAMAGE = missionNamespace getVariable "TEAM_DAMAGE";
@@ -28,6 +29,7 @@ player addEventHandler ["HandleDamage", {
     };
   };
 }];
+*/
 
 //delete empty continers
 [player, ['Take', {

@@ -8,7 +8,14 @@
 
 if (isServer) then {
     _unit = _this select 0;
+    _killer = _this select 1;
     _instigator = _this select 2;
+    if ((isNull _instigator) || {_killer == _unit}) then {
+        private _aceSource = _unit getVariable ["ace_medical_lastDamageSource", objNull];
+        if ((!isNull _aceSource) && {_aceSource != _unit}) then {
+            _instigator = _aceSource;
+        };
+    };
     if (isPlayer _instigator) then {
         _kilPointMulti = _unit getVariable "killPointMulti";
         [_instigator, (SCORE_KILL * _kilPointMulti)] call killPoints_fnc_add;

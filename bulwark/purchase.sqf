@@ -44,10 +44,16 @@ if (objPurchase) then {
     closeDialog 0;
 
     // If it's a container, make sure it's empty
-    clearItemCargoGlobal shopVehic;
-    clearWeaponCargoGlobal shopVehic;
-    clearMagazineCargoGlobal shopVehic;
-    clearBackpackCargoGlobal shopVehic;
+    if (_shopClass != "ACE_medicalSupplyCrate_advanced") then {
+        clearItemCargoGlobal shopVehic;
+        clearWeaponCargoGlobal shopVehic;
+        clearMagazineCargoGlobal shopVehic;
+        clearBackpackCargoGlobal shopVehic;
+    };
+
+    if (unitIsUAV shopVehic) then {
+        createVehicleCrew shopVehic;
+    };
 
 	[shopVehic, ShopCaller, [0,_VecRadius + 1.5,0.02], _shopDir] call build_fnc_pickup;
 };

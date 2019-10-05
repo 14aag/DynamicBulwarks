@@ -135,6 +135,7 @@ BULWARK_BUILDITEMS = [
     [1000, "Double H Barrier",     "Land_HBarrierWall4_F",              0,   4],
     [1000, "Concrete Platform",    "BlockConcrete_F",                   0, 3.5],
     [1200, "Storage box large",    "Box_NATO_AmmoVeh_F",                0,   1],
+    [2000, "Medical box",          "ACE_medicalSupplyCrate_advanced",   0,   1],
     [2500, "Static HMG",           "B_HMG_01_high_F",                   0,   1],
     [3000, "Small Bunker",         "Land_BagBunker_Small_F",          180,   3],
     [4500, "Pillbox",              "Land_PillboxBunker_01_hex_F",      90, 2.5],
