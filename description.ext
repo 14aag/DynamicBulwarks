@@ -8,7 +8,7 @@ overviewPicture = "preview.paa";
 
 loadScreen = "preview.paa";
 
-respawn = 2;
+respawn = 3;
 respawnOnStart = 1;
 respawnDialog = 0;
 respawnTemplates[] = {"Base"};
