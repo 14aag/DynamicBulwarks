@@ -227,7 +227,7 @@ class Params
 		title = "Dead bodies remain for how many waves (dead bodies impact perfomance)";
 		values[] = {0, 1, 2};
 		texts[] = {"0 (until next round begins)", "1", "2"};
-		default = 0;
+		default = 1;
 	};
 
 	class DOWN_TIME
