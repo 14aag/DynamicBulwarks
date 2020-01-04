@@ -55,7 +55,7 @@ if(BULWARK_MEDIKITS > 0) then {
 	_points = _player getVariable 'killPoints';
 	if (_points >= 500) then {
 		[_player, 0] remoteExec ['setDamage', 0, true];
-		[_player, _player, "", "", []] call ace_medical_fnc_treatmentAdvanced_fullHeal;
+		[_player, _player] call ace_medical_treatment_fnc_fullHeal;
 		[_player, 500] remoteExec ['killPoints_fnc_spend', 2];
 		[true] remoteExec ['disableUserInput', _player];
 		[_player, 'AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon'] remoteExec ['switchMove', 0];
