@@ -1,7 +1,7 @@
-onLoadMission = "dynamicBulwarks";
+onLoadMission = "dynamicBulwarks_CUP2020";
 onLoadIntro = "Defend yourself";
-onLoadName = "dynamicBulwarks";
-briefingName = "dynamicBulwarks";
+onLoadName = "dynamicBulwarks_CUP2020";
+briefingName = "dynamicBulwarks_CUP2020";
 overviewText = "Survive by scavenging equipment, in a randomly selected city, against ever increasing waves of hostiles.";
 author = "Hilltop & omNomios";
 overviewPicture = "preview.paa";

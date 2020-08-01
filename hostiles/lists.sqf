@@ -58,7 +58,7 @@ List_ZombieBoss = _zombieBoss;
 List_ZombieWalker = _zombieWalker;
 
 _bandits = [];
-_groupConfig = configfile >> "CfgGroups" >> "West" >> "rhsgref_faction_hidf" >> "rhsgref_group_hidf_infantry" >> "rhsgref_group_hidf_infantry_squad";
+_groupConfig = configfile >> "CfgGroups" >> "Indep" >> "CPC_I_PIC" >> "Infantry" >> "CPC_I_PIC_InfSquad_Weapons";
 _count = count (_groupConfig);
 for "_x" from 0 to (_count-1) do {
     _item=((_groupConfig) select _x);
@@ -69,7 +69,7 @@ for "_x" from 0 to (_count-1) do {
 List_Bandits = _bandits;
 
 _paraBandits = [];
-_groupConfig = configfile >> "CfgGroups" >> "West" >> "rhsgref_faction_hidf" >> "rhsgref_group_hidf_infantry" >> "rhsgref_group_hidf_infantry_squad";
+_groupConfig = configfile >> "CfgGroups" >> "Indep" >> "CPC_I_PIC" >> "Infantry" >> "CPC_I_PIC_InfSquad_Weapons";
 _count = count (_groupConfig);
 for "_x" from 0 to (_count-1) do {
     _item=((_groupConfig) select _x);
@@ -80,7 +80,7 @@ for "_x" from 0 to (_count-1) do {
 List_ParaBandits = _paraBandits;
 
 _eastSoldier = [];
-_groupConfig = configfile >> "CfgGroups" >> "Indep" >> "LOP_PMC" >> "Infantry" >> "LOP_PMC_Rifle_squad";
+_groupConfig = configfile >> "CfgGroups" >> "Indep" >> "CUP_I_PMC_ION" >> "Infantry" >> "CUP_I_PMC_ION_Field_Security_Team";
 _count = count (_groupConfig);
 for "_x" from 0 to (_count-1) do {
     _item=((_groupConfig) select _x);
@@ -91,7 +91,7 @@ for "_x" from 0 to (_count-1) do {
 List_OPFOR = _eastSoldier;
 
 _indSoldier = [];
-_groupConfig = configfile >> "CfgGroups" >> "Indep" >> "IND_F" >> "Infantry" >> "HAF_InfSquad";
+_groupConfig = configfile >> "CfgGroups" >> "East" >> "CUP_O_RU" >> "Infantry" >> "CUP_O_RU_InfSquad_VDV_M_EMR";
 _count = count (_groupConfig);
 for "_x" from 0 to (_count-1) do {
     _item=(_groupConfig select _x);
@@ -113,7 +113,7 @@ for "_x" from 0 to (_count-1) do {
 List_NATO = _natoSoldier;
 
 _viper = [];
-_groupConfig = configfile >> "CfgGroups" >> "East" >> "rhs_faction_vdv" >> "rhs_group_rus_vdv_infantry_recon" >> "rhs_group_rus_vdv_infantry_recon_squad";
+_groupConfig = configfile >> "CfgGroups" >> "East" >> "OPF_R_F" >> "SpecOps" >> "O_R_InfSquad";
 _count =  count (_groupConfig);
 for "_x" from 0 to (_count-1) do {
     _item=((_groupConfig) select _x);
