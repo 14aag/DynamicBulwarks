@@ -331,7 +331,7 @@ class Params
 		title = "Mission area size";
 		values[] = {50, 100, 150, 200, 250};
 		texts[] = {"(50m) Tiny", "(100m) Small", "(150m) Normal", "(200m) Large", "(250m) Huge"};
-		default = 150;
+		default = 250;
 	};
 
 	class BULWARK_MINSIZE

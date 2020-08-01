@@ -44,6 +44,9 @@ publicVariable "bulwarkCity";
 //bulwarkBox addWeaponCargoGlobal["hgun_P07_F",10];
 //bulwarkBox addMagazineCargoGlobal ["16Rnd_9x21_Mag",20];
 bulwarkBox addItemCargoGlobal ["ACE_EarPlugs", 100];
+bulwarkBox addItemCargoGlobal ["ItemCompass", 20];
+bulwarkBox addItemCargoGlobal ["ACE_Clacker", 4];
+bulwarkBox addItemCargoGlobal ["ACE_DefusalKit", 2];
 if(BULWARK_MEDIKITS > 0) then {
 	bulwarkBox addItemCargoGlobal ["Medikit", BULWARK_MEDIKITS];
 };
